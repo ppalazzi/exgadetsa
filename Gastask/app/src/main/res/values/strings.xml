@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Gastask</string>
+
+    <string-array name="mainMenuOptions">
+        <item>Todas</item>
+        <item>Con Errores</item>
+        <item>Nuevas</item>
+        <item>Preferidas</item>
+        <item>Con ubicación</item>
+    </string-array>
 </resources>
