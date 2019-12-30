@@ -11,7 +11,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.palazzisoft.gastask.R;
-import com.squareup.picasso.Picasso;
 
 public class DashboardCustomerAdapter extends RecyclerView.Adapter<DashboardCustomerAdapter.DashboardCustomViewHolder> {
 
@@ -34,7 +33,7 @@ public class DashboardCustomerAdapter extends RecyclerView.Adapter<DashboardCust
     @Override
     public void onBindViewHolder(@NonNull DashboardCustomViewHolder dashboardCustomViewHolder, int i) {
         dashboardCustomViewHolder.getTextOption().setText(options.get(i));
-        Picasso.with(context).load(R.drawable.dashboardtodas).into(dashboardCustomViewHolder.getIconOption());
+        //Picasso.with(context).load(R.drawable.dashboardtodas).into(dashboardCustomViewHolder.getIconOption());
     }
 
     @Override

@@ -4,7 +4,130 @@
                                     android:id="@+id/card_view_friend"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    card_view:cardUseCompatPadding="true">
+                                    card_view:cardUseCompatPadding="true"
+                                    android:elevation="6dp">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:orientation="horizontal"
+                      android:id="@+id/dashboard_icon_layout_id">
+            <ImageView
+                    android:id="@+id/iconSemasphore"
+                    android:src="@drawable/urgente_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    android:elevation="8dp"/>
+        </LinearLayout>
+
+
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/dashboard_data_layout_id"
+                        android:layout_toRightOf="@id/dashboard_icon_layout_id">
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_marginTop="@dimen/marginCardTop"
+                          android:id="@+id/dashboard_title_accion_layout_id">
+
+                <TextView
+                        android:id="@+id/textDashboard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:paddingTop="0dp"
+                        android:fontFamily="@font/work_sans"
+                        android:textSize="13sp"
+                        android:layout_weight="8"
+                        android:layout_gravity="center"
+                        android:textColor="@color/fontColorSecondary"
+
+                />
+
+                <ImageView
+                        android:id="@+id/iconStar"
+                        android:src="@drawable/ic_star"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="right"/>
+
+                <ImageView
+                        android:id="@+id/iconNavigation"
+                        android:src="@drawable/ic_map_navigation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="right"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_marginTop="@dimen/marginCardTop"
+                          android:id="@+id/dashboard_address_layout_id"
+                          android:layout_below="@id/dashboard_title_accion_layout_id">
+
+                <TextView
+                        android:id="@+id/textDashboard2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/iconDashboard"
+                        android:layout_marginLeft="16dp"
+                        android:paddingTop="0dp"
+                        android:text="Leopardi 714, Castelar, Buenos Aires"
+                        android:fontFamily="@font/work_sans_bold"
+                        android:textSize="13sp"
+                        android:textColor="@color/fontColorSecondary"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:layout_marginTop="@dimen/marginCardTop"
+                          android:id="@+id/dashboard_additional_data_layout_id"
+                          android:layout_below="@id/dashboard_address_layout_id">
+
+                <TextView
+                        android:id="@+id/textDashboard3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/iconDashboard"
+                        android:layout_marginLeft="16dp"
+                        android:paddingTop="0dp"
+                        android:text="I'll be rendering around and round"
+                        android:fontFamily="@font/work_sans"
+                        android:textSize="13sp"
+                        android:textColor="@color/fontColorSecondary"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <!--
+
+
+
+
+
 
     <RelativeLayout
             android:layout_width="match_parent"
@@ -26,8 +149,8 @@
                 android:layout_toRightOf="@+id/iconDashboard"
                 android:layout_marginLeft="16dp"
                 android:paddingTop="0dp"
-                android:lines="1"/>
+                android:lines="1" android:fontFamily="@font/work_sans_medium"/>
     </RelativeLayout>
-
+    -->
 
 </android.support.v7.widget.CardView>

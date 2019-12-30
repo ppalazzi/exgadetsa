@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Gastask</string>
+    <string name="app_name"></string>
 
     <string-array name="mainMenuOptions">
         <item>Todas</item>
@@ -8,4 +8,23 @@
         <item>Preferidas</item>
         <item>Con ubicación</item>
     </string-array>
+
+    <!-- tool bar -->
+    <string name="titleToolbar">Tareas</string>
+    <string name="logout">Salir</string>
+
+    <string-array name="filters">
+        <item></item>
+        <item>Con Ubicación</item>
+        <item>Sin Ubicación</item>
+        <item>Vencidas</item>
+        <item>Urgentes</item>
+        <item>A termino</item>
+        <item>Destacadas</item>
+        <item>Guardadas</item>
+        <item>Pendientes de envío</item>
+        <item>Enviadas</item>
+    </string-array>
+
+    <string name="filter_label">Filtros</string>
 </resources>
